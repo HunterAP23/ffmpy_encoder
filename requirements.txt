@@ -1,0 +1,2 @@
+ffmpy==0.2.2
+pymediainfo==4.2.1

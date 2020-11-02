@@ -1,0 +1,30 @@
+{
+	"global": {
+    "output_pattern": "_CRF14_HEVC",
+    "directories": [
+      "none"
+    ],
+		"cache": "Q:\\"
+	},
+  "decode": {
+		"threads_decode": "0",
+    "hwaccel": "auto",
+    "codec_video": "auto",
+		"extra options": [
+			"-hide_banner",
+			"probesize 5000000",
+	    "analyzeduration 50000000"
+		]
+  },
+  "encode": {
+		"threads_encode": "0",
+    "codec_video": "libx265",
+    "preset": "medium",
+    "crf": "14",
+    "codec_audio": "copy",
+    "format": "mp4",
+		"extra options": [
+			"max_muxing_queue_size 2048"
+		]
+  }
+}
